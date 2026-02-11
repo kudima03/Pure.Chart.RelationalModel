@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.4.11506.43 insiders
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D6C2A4AE-9581-4D83-B15D-BBA1F30D7C34}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pure.Chart.RelationalModel", "Pure.Chart.RelationalModel\Pure.Chart.RelationalModel.csproj", "{1420B2EC-A4E9-49EE-B87F-EF9BC5199545}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{40BEE4BB-B91A-425B-9438-E40D835DD3D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pure.Chart.RelationalModel.Tests", "Tests\Pure.Chart.RelationalModel.Tests\Pure.Chart.RelationalModel.Tests.csproj", "{B7D35175-70F0-4C13-A160-B95CF19EA7AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1420B2EC-A4E9-49EE-B87F-EF9BC5199545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1420B2EC-A4E9-49EE-B87F-EF9BC5199545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1420B2EC-A4E9-49EE-B87F-EF9BC5199545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1420B2EC-A4E9-49EE-B87F-EF9BC5199545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7D35175-70F0-4C13-A160-B95CF19EA7AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7D35175-70F0-4C13-A160-B95CF19EA7AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7D35175-70F0-4C13-A160-B95CF19EA7AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7D35175-70F0-4C13-A160-B95CF19EA7AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B7D35175-70F0-4C13-A160-B95CF19EA7AE} = {40BEE4BB-B91A-425B-9438-E40D835DD3D9}
+	EndGlobalSection
+EndGlobal
