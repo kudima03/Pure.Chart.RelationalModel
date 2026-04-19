@@ -4,9 +4,9 @@ using Pure.Primitives.Abstractions.String;
 
 namespace Pure.Chart.RelationalModel;
 
-public sealed record SeriesRelationalModel : ISeriesRelationalModel
+public sealed record ChartSeriesRelationalModel : IChartSeriesRelationalModel
 {
-    public SeriesRelationalModel(
+    public ChartSeriesRelationalModel(
         IGuid id,
         IGuid chartId,
         IString legend,

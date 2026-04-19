@@ -6,13 +6,13 @@ using Guid = Pure.Primitives.Guid.Guid;
 
 namespace Pure.Chart.RelationalModel.Tests;
 
-public sealed record SeriesRelationalModelTests
+public sealed record ChartSeriesRelationalModelTests
 {
     [Fact]
     public void InitializeIdCorrectly()
     {
         IGuid guid = new Guid();
-        ISeriesRelationalModel type = new SeriesRelationalModel(
+        IChartSeriesRelationalModel type = new ChartSeriesRelationalModel(
             guid,
             new Guid(),
             new RandomString(),
@@ -27,7 +27,7 @@ public sealed record SeriesRelationalModelTests
     public void InitializeChartIdCorrectly()
     {
         IGuid guid = new Guid();
-        ISeriesRelationalModel type = new SeriesRelationalModel(
+        IChartSeriesRelationalModel type = new ChartSeriesRelationalModel(
             new Guid(),
             guid,
             new RandomString(),
@@ -42,7 +42,7 @@ public sealed record SeriesRelationalModelTests
     public void InitializeLegendCorrectly()
     {
         IString legend = new RandomString();
-        ISeriesRelationalModel type = new SeriesRelationalModel(
+        IChartSeriesRelationalModel type = new ChartSeriesRelationalModel(
             new Guid(),
             new Guid(),
             legend,
@@ -57,7 +57,7 @@ public sealed record SeriesRelationalModelTests
     public void InitializeXAxisSourceCorrectly()
     {
         IString source = new RandomString();
-        ISeriesRelationalModel type = new SeriesRelationalModel(
+        IChartSeriesRelationalModel type = new ChartSeriesRelationalModel(
             new Guid(),
             new Guid(),
             new RandomString(),
@@ -72,7 +72,7 @@ public sealed record SeriesRelationalModelTests
     public void InitializeYAxisSourceCorrectly()
     {
         IString source = new RandomString();
-        ISeriesRelationalModel type = new SeriesRelationalModel(
+        IChartSeriesRelationalModel type = new ChartSeriesRelationalModel(
             new Guid(),
             new Guid(),
             new RandomString(),
