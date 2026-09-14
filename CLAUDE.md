@@ -13,7 +13,7 @@ dotnet test --no-build --verbosity normal
 dotnet format --verify-no-changes             # check code style (CI enforces this)
 csharpier check .                             # check code style (CI enforces this)
 dotnet format && csharpier format .           # auto-fix code style
-dotnet pack --configuration Release -p:PackageVersion=<version> --output .
+dotnet pack --configuration Release -p:Version=<version> --output .
 ```
 
 Mutation testing (run from `./src`; requires `dotnet-stryker` installed globally):
