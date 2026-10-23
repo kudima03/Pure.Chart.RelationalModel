@@ -41,7 +41,7 @@ All interface contracts are defined in [`Pure.Chart.RelationalModel.Abstractions
 
 **Multi-targeting:** net7.0, net8.0, net9.0, net10.0. All records must remain AOT-compatible (`IsAotCompatible = true`).
 
-**Package validation:** `EnablePackageValidation = true` with `PackageValidationBaselineVersion = 0.1.0-preview.3.0.0`. Breaking API changes fail the build.
+**Package validation:** `EnablePackageValidation = true` with `PackageValidationBaselineVersion = 0.1.0-preview.4.0.0`. Breaking API changes fail the build.
 
 **Publishing:** triggered by pushing a semver tag matching `*.*.*`. The tag becomes the `PackageVersion`.
 
