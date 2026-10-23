@@ -17,14 +17,14 @@ Concrete relational model records for the **Pure** ecosystem — immutable imple
 |------|-----------|------------|
 | `ChartRelationalModel` | `IChartRelationalModel` | `Id`, `Title`, `Description`, `TypeId`, `XAxisId`, `YAxisId` |
 | `ChartTypeRelationalModel` | `IChartTypeRelationalModel` | `Id`, `Name` |
-| `ChartSeriesRelationalModel` | `IChartSeriesRelationalModel` | `Id`, `ChartId`, `Legend`, `XAxisSource`, `YAxisSource` |
+| `ChartSeriesRelationalModel` | `IChartSeriesRelationalModel` | `Id`, `ChartId`, `Legend`, `XAxisSource`, `YAxisSource`, `LineType` |
 | `AxisRelationalModel` | `IAxisRelationalModel` | `Id`, `Legend` |
 
 All properties are constructor-assigned and exposed as read-only `get`-only members. No setters, no mutation.
 
 ## Dependencies
 
-- [`Pure.Chart.RelationalModel.Abstractions` 0.1.0-preview.6.0.0](https://github.com/kudima03/Pure.Chart.RelationalModel.Abstractions/tree/0.1.0-preview.6.0.0) — interface contracts for chart, chart type, series, and axis relational models
+- [`Pure.Chart.RelationalModel.Abstractions` 0.1.0-preview.7.0.0](https://github.com/kudima03/Pure.Chart.RelationalModel.Abstractions/tree/0.1.0-preview.7.0.0) — interface contracts for chart, chart type, series, and axis relational models
 
 ## Target Frameworks
 
@@ -47,6 +47,13 @@ using Pure.Chart.RelationalModel;
 // All constructor parameters implement IGuid or IString from Pure.Primitives.Abstractions.
 var chart = new ChartRelationalModel(id, title, description, typeId, xAxisId, yAxisId);
 var chartType = new ChartTypeRelationalModel(id, name);
-var series = new ChartSeriesRelationalModel(id, chartId, legend, xAxisSource, yAxisSource);
+var series = new ChartSeriesRelationalModel(
+    id,
+    chartId,
+    legend,
+    xAxisSource,
+    yAxisSource,
+    lineType
+);
 var axis = new AxisRelationalModel(id, legend);
 ```
