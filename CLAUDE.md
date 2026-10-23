@@ -34,7 +34,7 @@ This is an **implementation NuGet library** — four sealed records, no abstract
 |--------|-----------|
 | `ChartRelationalModel` | `IChartRelationalModel` — chart with title, description, and foreign keys to its type and axes |
 | `ChartTypeRelationalModel` | `IChartTypeRelationalModel` — named chart type |
-| `ChartSeriesRelationalModel` | `IChartSeriesRelationalModel` — series belonging to a chart, with X/Y source columns |
+| `ChartSeriesRelationalModel` | `IChartSeriesRelationalModel` — series belonging to a chart, with X/Y source columns and a line type |
 | `AxisRelationalModel` | `IAxisRelationalModel` — axis with a display legend |
 
 All interface contracts are defined in [`Pure.Chart.RelationalModel.Abstractions`](https://github.com/kudima03/Pure.Chart.RelationalModel.Abstractions). All properties use `IGuid` or `IString` from `Pure.Primitives.Abstractions`.

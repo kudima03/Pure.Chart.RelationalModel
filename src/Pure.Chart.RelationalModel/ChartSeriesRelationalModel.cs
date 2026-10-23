@@ -11,7 +11,8 @@ public sealed record ChartSeriesRelationalModel : IChartSeriesRelationalModel
         IGuid chartId,
         IString legend,
         IString xAxisSource,
-        IString yAxisSource
+        IString yAxisSource,
+        IString lineType
     )
     {
         Id = id;
@@ -19,6 +20,7 @@ public sealed record ChartSeriesRelationalModel : IChartSeriesRelationalModel
         Legend = legend;
         XAxisSource = xAxisSource;
         YAxisSource = yAxisSource;
+        LineType = lineType;
     }
 
     public IGuid Id { get; }
@@ -30,4 +32,6 @@ public sealed record ChartSeriesRelationalModel : IChartSeriesRelationalModel
     public IString XAxisSource { get; }
 
     public IString YAxisSource { get; }
+
+    public IString LineType { get; }
 }
