@@ -32,6 +32,7 @@ All properties are constructor-assigned and exposed as read-only `get`-only memb
 - .NET 8
 - .NET 9
 - .NET 10
+- .NET 11
 
 ## Installation
 
